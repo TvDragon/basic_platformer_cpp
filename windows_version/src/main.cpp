@@ -44,7 +44,7 @@ int main(int argc, char** argv) {
   RenderWindow window("RPG Platformer", SCREEN_WIDTH, SCREEN_HEIGHT);
 
   SDL_Texture* imgs[34] = {window.LoadTexture("C:/Users/TvDra/Desktop/projects/basic_platformer_cpp/windows_version/res/forest/tiles/Tile_02.png"),
-                            window.LoadTexture("C:/Users/TvDra/Desktop/projects/basic_platformer_cpp/windows_version/windows_version/res/forest/tiles/Tile_07.png"),
+                            window.LoadTexture("C:/Users/TvDra/Desktop/projects/basic_platformer_cpp/windows_version/res/forest/tiles/Tile_07.png"),
                             window.LoadTexture("C:/Users/TvDra/Desktop/projects/basic_platformer_cpp/windows_version/res/forest/tiles/Tile_08.png"),
                             window.LoadTexture("C:/Users/TvDra/Desktop/projects/basic_platformer_cpp/windows_version/res/forest/tiles/Tile_09.png"),
                             window.LoadTexture("C:/Users/TvDra/Desktop/projects/basic_platformer_cpp/windows_version/res/forest/tiles/Tile_31.png"),
@@ -202,7 +202,7 @@ int main(int argc, char** argv) {
   Entity non_interactable_objects[24];
   Entity enemies[4];
 
-  string filename = "map.txt";
+  string filename = "../map.txt";
   fstream f;
   f.open(filename, ios::in);	// open file to read
 
