@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <fstream>
 #include <string>
+#include <math.h>
 
 using namespace std;
 
@@ -226,7 +227,7 @@ int main(int argc, char** argv) {
           // NULL
         } else if (index == -2) {
           // enemies
-          enemies[enemies_idx] = Entity(j*32, i*32, 6, 5, enemy);
+          enemies[enemies_idx] = Entity(j*32, i*32, 5, 5, enemy);
           enemies_idx += 1;
         } else if (index < 9) {
           // platforms
@@ -308,7 +309,7 @@ int main(int argc, char** argv) {
   int i = 0;  // Running
   int j = 6;
   int k = 0;  // idle
-  int l = 4;
+  int l = 8;
   int m = 0;  // jumping
   int n = 12;
   int p = 0;  // attack 1
@@ -327,10 +328,10 @@ int main(int argc, char** argv) {
       i = 0;
     if (j > 11)
       j = 6;
-    if (k > 3)
+    if (k > 7)
       k = 0;
-    if (l > 7)
-      l = 4;
+    if (l > 15)
+      l = 8;
     if (m > 11) {
       m = 0;
       player.SetJump(false);
@@ -386,14 +387,13 @@ int main(int argc, char** argv) {
 
     if (player.GetStanding()) {
       if (player.GetLooking()) {  // Looking right
-        idle = window.LoadTexture(idles[k].c_str());
+        idle = window.LoadTexture(idles[(int) floor(k/2)].c_str());
         k += 1;
       } else {  // Looking left
-        idle = window.LoadTexture(idles[l].c_str());
+        idle = window.LoadTexture(idles[(int) floor(l/2)].c_str());
         l += 1;
       }
       player.SetSDLTexture(idle);
-      SDL_Delay(150);
     }
 
     if (player.GetJump()) {
@@ -431,7 +431,6 @@ int main(int argc, char** argv) {
       }
       ticks += 1;
       player.SetSDLTexture(jump);
-      SDL_Delay(100);
     }
 
     if (!player.GetJump()) {  // When attacking
@@ -440,34 +439,28 @@ int main(int argc, char** argv) {
           attack = window.LoadTexture(attacks_one[p].c_str());
           p += 1;
           player.SetSDLTexture(attack);
-          SDL_Delay(100);
         } else if (player.GetAttack() == 2) {
           attack = window.LoadTexture(attacks_two[r].c_str());
           r += 1;
           player.SetSDLTexture(attack);
-          SDL_Delay(100);
         } else if (player.GetAttack() == 3) {
           attack = window.LoadTexture(attacks_three[t].c_str());
           t += 1;
           player.SetSDLTexture(attack);
-          SDL_Delay(115);
         }
       } else {
         if (player.GetAttack() == 1) {
           attack = window.LoadTexture(attacks_one[q].c_str());
           q += 1;
           player.SetSDLTexture(attack);
-          SDL_Delay(100);
         } else if (player.GetAttack() == 2) {
           attack = window.LoadTexture(attacks_two[s].c_str());
           s += 1;
           player.SetSDLTexture(attack);
-          SDL_Delay(100);
         } else if (player.GetAttack() == 3) {
           attack = window.LoadTexture(attacks_three[u].c_str());
           u += 1;
           player.SetSDLTexture(attack);
-          SDL_Delay(115);
         }
       }
     }
@@ -506,7 +499,7 @@ int main(int argc, char** argv) {
 
 
     const Uint8* keystates = SDL_GetKeyboardState(NULL);
-    if (keystates[SDL_SCANCODE_Q])
+    if (keystates[SDL_SCANCODE_ESCAPE])
       game_running = false;
     if (keystates[SDL_SCANCODE_Z]) {  // attack one
       player.SetAttack(1);
