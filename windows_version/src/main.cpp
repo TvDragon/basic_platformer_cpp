@@ -203,7 +203,7 @@ int main(int argc, char** argv) {
   Entity non_interactable_objects[24];
   Entity enemies[4];
 
-  string filename = "map.txt";
+  string filename = "../map.txt";
   fstream f;
   f.open(filename, ios::in);	// open file to read
 
