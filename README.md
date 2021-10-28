@@ -52,3 +52,12 @@ For this project I wanted to learn C++ and use the SDL2 library to create a basi
 4. Run the game by entering the command below
 
 		./play
+
+## Playing the game
+
+- Jump - spacebar
+- Move Left - left arrow key
+- Move Right - right arrow key
+- Attack One - z
+- Attack Two - x
+- Attack Three - c
