@@ -1,10 +1,7 @@
 # Basic Platformer
-
-For this project I wanted to learn C++ and use the SDL2 library to create a basic action platformer game.
-
 ## Motivation
 
-This project was inspired 
+For this project I wanted to learn C++ and use the SDL2 library to create a basic action platformer game.
 
 ## Getting Started
 
