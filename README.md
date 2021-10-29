@@ -41,17 +41,12 @@ For this project I wanted to learn C++ and use the SDL2 library to create a basi
 
 1. Once you have installed the prerequisites and unzipped the file or cloned the repository move into the folder
 
-2. If you use Ubuntu/Debian then you can run the command below which will compile the files using a Makefile
+2. If you use Ubuntu/Debian then you can run the command below which will compile the files using a Makefile then you can run the game
 
 		make play
-
-3. If you use Windows then you must open manually copy the command below and paste that into command prompt or a terminal
-
-		g++ main.cpp entity.cpp draw_objects.cpp check_collision.cpp object_detection.cpp render_window.cpp -std=c++14 -m64 -g -I include -I C:/SDL2-w64/include -L C:/SDL2-w64/lib -lmingw32 -lSDL2 -lSDL2main -lSDL2_image -lSDL2_ttf play
-
-4. Run the game by entering the command below
-
 		./play
+
+3. If you use Windows then you need to open the play folder and double click on play.exe to play the game
 
 ## Playing the game
 
