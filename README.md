@@ -1,7 +1,7 @@
 # Basic Platformer
 ## Motivation
 
-For this project I wanted to learn C++ and use the SDL2 library to create a basic action platformer game.
+This is a basic platformer game that I made during the holidays in my second year of uni as I wanted to teach myself how to write in C++ and use the SDL2 library. You play as a hero who must fight his way through the level slashing down enemies and crates along with collecting keys to open chests and collect coins.
 
 ## Getting Started
 
