@@ -48,7 +48,7 @@ This is a basic platformer game that I made during the holidays in my second yea
 
 3. If you use Windows then you need to open the play folder and double click on play.exe to play the game
 
-## Playing the game
+## Controls
 
 - Jump - spacebar
 - Move Left - left arrow key
