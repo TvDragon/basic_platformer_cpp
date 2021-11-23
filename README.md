@@ -43,7 +43,7 @@ Note: If you are a windows user you can just skip the install prerequisites and 
 
 1. Once you have installed the prerequisites and unzipped the file or cloned the repository move into the folder
 
-2. If you use Ubuntu/Debian then you can run the command below which will compile the files using a Makefile then you can run the game
+2. If you use Ubuntu/Debian move into linux_version then you can run the command below which will compile the files using a Makefile then you can run the game
 
 		make play
 		./play
