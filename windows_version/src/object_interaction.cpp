@@ -132,7 +132,6 @@ void Attack(Entity player, Entity* boxes, int *num_boxes, Entity* enemies, int *
     interact = Interaction(player, boxes[i]);
     if (interact == true) {
       *(boxes + i) = Entity(-500, -500, NULL, 1);
-      *num_boxes -= 1;
     }
   }
 
@@ -144,7 +143,6 @@ void Attack(Entity player, Entity* boxes, int *num_boxes, Entity* enemies, int *
       enemies[i].SetHealth(enemies[i].GetHealth() - 1);
       if (enemies[i].GetHealth() <= 0) {
         *(enemies + i) = Entity(-500, -500, 0, 0, NULL);
-        *num_enemies -= 1;
       }
     }
   }
@@ -185,7 +183,6 @@ Entity GetObjects(Entity player, Entity* coins, Entity* keys, int *num_coins, in
     interact = Interaction(player, coins[i]);
     if (interact == true) {
       *(coins + i) = Entity(-500, -500, NULL, 1);
-      *num_coins -= 1;
       player.SetCoins(player.GetCoins() + 1);
     }
   }
@@ -194,7 +191,6 @@ Entity GetObjects(Entity player, Entity* coins, Entity* keys, int *num_coins, in
     interact = Interaction(player, keys[i]);
     if (interact == true) {
       *(keys + i) = Entity(-500, -500, NULL, 1);
-      *num_keys -= 1;
       player.SetKeys(player.GetKeys() + 1);
     }
   }
@@ -211,7 +207,6 @@ Entity OpenChest(Entity player, Entity* chests, int *num_chests) {
       interact = Interaction(player, chests[i]);
       if (interact == true) {
         *(chests + i) = Entity(-500, -500, NULL, 1);
-        *num_chests -= 1;
         player.SetKeys(player.GetKeys() - 1);
         player.SetCoins(player.GetCoins() + 5);
       }
