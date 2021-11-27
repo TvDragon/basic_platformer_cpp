@@ -5,14 +5,14 @@ This is a basic platformer game that I made during the holidays in my second yea
 
 ## Getting Started
 
-### Preprequisites
+### Optional Installs
 
-Note: If you are a windows user you can just skip the install prerequisites and move down to usage. Otherwise, you must install the prerequisites to play the game.
+Note: You do not have to install the necessary libraries to play as they are already included in the downloads. You can move down to the usage section to start playing the game. However if the game doesn't work then you may have to follow the install guide below.
 
 - [C++](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/installer/mingw-w64-install.exe/download)
 - [SDL2 Library](https://www.libsdl.org/download-2.0.php)
 
-#### Installing prerequisites on Ubuntu/Debian
+#### Installing on Ubuntu/Debian
 1. First check if C/C++ compiler is installed by opening up the terminal and enter the command
 
 		g++ --version
@@ -31,7 +31,7 @@ Note: If you are a windows user you can just skip the install prerequisites and 
 
 		g++ --version
 
-#### Optional Install on Windows
+#### Installing on Windows
 1. Follow tutorial to install on [windows](https://www.matsson.com/prog/sdl2-mingw-w64-tutorial.php)
 
 ### Installing
@@ -43,10 +43,9 @@ Note: If you are a windows user you can just skip the install prerequisites and 
 
 1. Once you have installed the prerequisites and unzipped the file or cloned the repository move into the folder
 
-2. If you use Ubuntu/Debian move into linux_version then you can run the command below which will compile the files using a Makefile then you can run the game
+2. If you use Ubuntu/Debian move into linux_version then you can run the command in your terminal in the directory that you downloaded the game and start playing the game
 
-		make play
-		./play
+		sh play.sh
 
 3. If you use Windows then you need to open the windows folder then plays folder and double click on play.exe to play the game
 
