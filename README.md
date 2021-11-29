@@ -35,7 +35,7 @@ Note: You do not have to install the necessary libraries to play as they are alr
 
 		sudo apt install libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev
 
-Note: The package manager you use will be different depending on which linux system you use. You can find your package manager by searching it on the internet if you don't know and install the libraries.
+Note: The package manager you use will be different depending on which linux system you use. You can find your package manager by searching it on the internet if you don't know then install the libraries.
 
 #### Installing on Windows
 1. Follow tutorial to install on [windows](https://www.matsson.com/prog/sdl2-mingw-w64-tutorial.php)
