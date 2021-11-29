@@ -41,15 +41,15 @@ Note: The package manager you use will be different depending on which linux sys
 1. Follow tutorial to install on [windows](https://www.matsson.com/prog/sdl2-mingw-w64-tutorial.php)
 
 ### Installing
-1. You can either download the zip file and upzip it or clone th repository
+If you want to install the source code or appimage for Linux you can download it at [Linux Build](https://github.com/TvDragon/basic_platformer_cpp/releases/tag/Linux)
 
-		git clone https://github.com/TvDragon/basic_platformer_cpp.git
+If you want to install the source code for Windows you can download it at [Windows Build](https://github.com/TvDragon/basic_platformer_cpp/releases/tag/Windows)
 	
 ## Usage
 
-1. Once you have installed the prerequisites and unzipped the file or cloned the repository move into the folder
+1. Once you have installed and unzipped the file or cloned the repository move into the folder
 
-2. If you use Ubuntu/Debian move into linux_version then you can run the command in your terminal in the directory that you downloaded the game and start playing the game
+2. If you use Ubuntu/Debian move into folder you unzipped then you can run the command in your terminal in the directory that you downloaded the game to and start playing the game
 
 		sh play.sh
 
@@ -57,7 +57,7 @@ Note: The package manager you use will be different depending on which linux sys
 
 		chmod a+x Basic_Platformer-x86_64.AppImage
 
-4. If you use Windows then you need to open the windows folder then plays folder and double click on play.exe to play the game
+4. If you use Windows then you need to open the folder you just unzipped then play folder and double click on play.exe to play the game
 
 ## Controls
 
