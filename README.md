@@ -59,7 +59,6 @@ Note: The package manager you use will be different depending on which linux sys
 
 4. If you use Windows then you need to open the windows folder then plays folder and double click on play.exe to play the game
 
-
 ## Controls
 
 - Jump - spacebar
