@@ -31,6 +31,10 @@ Note: You do not have to install the necessary libraries to play as they are alr
 
 		g++ --version
 
+6. Install the SDL2 libraries by following [SDL2 Library Install](https://www.libsdl.org/download-2.0.php)
+
+Note: The package manager you use will be different depending on which linux system you use. You can find your package manager by searching it on the internet if you don't know and install the libraries.
+
 #### Installing on Windows
 1. Follow tutorial to install on [windows](https://www.matsson.com/prog/sdl2-mingw-w64-tutorial.php)
 
@@ -47,7 +51,12 @@ Note: You do not have to install the necessary libraries to play as they are alr
 
 		sh play.sh
 
-3. If you use Windows then you need to open the windows folder then plays folder and double click on play.exe to play the game
+3. If you prefer using an app image then run the command below in your terminal in the directory that you downloaded the game and start playing the game by double clicking on it
+
+		chmod a+x Basic_Platformer-x86_64.AppImage
+
+4. If you use Windows then you need to open the windows folder then plays folder and double click on play.exe to play the game
+
 
 ## Controls
 
