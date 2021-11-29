@@ -5,7 +5,7 @@ This is a basic platformer game that I made during the holidays in my second yea
 
 ## Getting Started
 
-### Optional Installs
+### Optional Dependency Installs
 
 Note: You do not have to install the necessary libraries to play as they are already included in the downloads. You can move down to the usage section to start playing the game. However if the game doesn't work then you may have to follow the install guide below.
 
@@ -40,7 +40,7 @@ Note: The package manager you use will be different depending on which linux sys
 #### Installing on Windows
 1. Follow tutorial to install on [windows](https://www.matsson.com/prog/sdl2-mingw-w64-tutorial.php)
 
-### Installing
+## Installing the game
 If you want to install the source code or appimage for Linux you can download it at [Linux Build](https://github.com/TvDragon/basic_platformer_cpp/releases/tag/Linux)
 
 If you want to install the source code for Windows you can download it at [Windows Build](https://github.com/TvDragon/basic_platformer_cpp/releases/tag/Windows)
