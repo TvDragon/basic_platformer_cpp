@@ -33,7 +33,7 @@ Note: You do not have to install the necessary libraries to play as they are alr
 
 6. Install the SDL2 Library by entering the command below in your terminal
 
-		sudo apt install libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev
+		sudo apt install build-essential libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev
 
 Note: The package manager you use will be different depending on which linux system you use. You can find your package manager by searching it on the internet if you don't know then install the libraries.
 
