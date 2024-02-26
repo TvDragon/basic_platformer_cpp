@@ -67,3 +67,7 @@ If you want to install the source code for Windows you can download it at [Windo
 - Attack One - z
 - Attack Two - x
 - Attack Three - c
+
+## Video Gameplay
+
+https://github.com/TvDragon/basic_platformer_cpp/assets/67213501/4c152e09-b596-4a1f-a075-1cdb27305563
