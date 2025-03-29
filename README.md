@@ -16,8 +16,6 @@ Note: You do not have to install the necessary libraries to play as they are alr
 1. Follow tutorial to install on [windows](https://www.matsson.com/prog/sdl2-mingw-w64-tutorial.php)
 
 ## Installing the game
-If you want to install the source code or appimage for Linux you can download it at [Linux Build](https://github.com/TvDragon/basic_platformer_cpp/releases/tag/Linux)
-
 If you want to install the source code for Windows you can download it at [Windows Build](https://github.com/TvDragon/basic_platformer_cpp/releases/tag/Windows)
 	
 ## Usage
